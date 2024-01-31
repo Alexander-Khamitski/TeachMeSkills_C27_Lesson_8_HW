@@ -1,4 +1,4 @@
-# TeachMeSkills_C27_Lesson_7_HW
+# TeachMeSkills_C27_Lesson_8_HW
 Homework for lesson #8
 
 1. **Task #1**
