@@ -16,7 +16,7 @@ Class "Patient" contains:
 - methods: getName(), getTreatmentPlan(), setTreatmentPlan(int treatmentPlan) with validation assertion, 
   getDoctorPosition(), setDoctor(BaseDoctor baseDoctor) and getPatientInfo() methods;
 
-"Runner" class contains clinic logic:
+Class "Runner" contains clinic logic:
 - create and set patient name;
 - set treatment plan;
 - treat patient;
