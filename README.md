@@ -1,5 +1,5 @@
 # TeachMeSkills_C27_Lesson_7_HW
-Homework for the seventh lesson
+Homework for lesson #8
 
 1. **Task #1**
 
