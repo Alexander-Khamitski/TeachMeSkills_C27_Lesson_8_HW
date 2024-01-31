@@ -4,6 +4,7 @@ Homework for lesson #8
 1. **Task #1**
 
 Interface "Itreat" contains method treat().
+
 Abstract class "BaseDoctor" contains field position, constructor and getPosition() method;
 
 There are three "BaseDoctor" subclasses: Dentist, Surgeon, Therapist. 
