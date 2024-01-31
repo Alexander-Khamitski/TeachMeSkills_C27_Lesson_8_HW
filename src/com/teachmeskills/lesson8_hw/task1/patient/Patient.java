@@ -1,12 +1,12 @@
-package com.teachmeskills.lesson8_hw.patient;
+package com.teachmeskills.lesson8_hw.task1.patient;
 
-import com.teachmeskills.lesson8_hw.doctor.Doctor;
+import com.teachmeskills.lesson8_hw.task1.doctor.BaseDoctor;
 
 public class Patient {
 
     private String name;
     private int treatmentPlan;
-    private Doctor doctor;
+    private BaseDoctor baseDoctor;
 
     public Patient(String name) {
         this.name = name;
@@ -30,16 +30,16 @@ public class Patient {
     }
 
     public String getDoctorPosition() {
-        return doctor.getPosition();
+        return baseDoctor.getPosition();
     }
 
-    public void setDoctor(Doctor doctor) {
-        System.out.println(String.format("'%s' has been assigned to the patient: '%s'", doctor.getPosition(), name));
-        this.doctor = doctor;
+    public void setDoctor(BaseDoctor baseDoctor) {
+        System.out.println(String.format("'%s' has been assigned to the patient: '%s'", baseDoctor.getPosition(), name));
+        this.baseDoctor = baseDoctor;
     }
 
     public void getPatientInfo() {
         System.out.print("Patient info: ");
-        System.out.println("Name: " + name + "; Treatment plan: " + treatmentPlan + "; Doctor: " + getDoctorPosition());
+        System.out.println(String.format("Name: '%s'; Treatment plan: '%s'; Doctor: '%s';", name, treatmentPlan, getDoctorPosition()));
     }
 }

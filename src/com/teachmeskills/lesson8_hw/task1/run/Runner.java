@@ -1,8 +1,8 @@
-package com.teachmeskills.lesson8_hw.run;
+package com.teachmeskills.lesson8_hw.task1.run;
 
-import com.teachmeskills.lesson8_hw.doctor.Doctor;
-import com.teachmeskills.lesson8_hw.doctor.impl.Therapist;
-import com.teachmeskills.lesson8_hw.patient.Patient;
+import com.teachmeskills.lesson8_hw.task1.doctor.BaseDoctor;
+import com.teachmeskills.lesson8_hw.task1.doctor.impl.Therapist;
+import com.teachmeskills.lesson8_hw.task1.patient.Patient;
 
 import java.util.Scanner;
 
@@ -17,9 +17,9 @@ public class Runner {
         patient.setTreatmentPlan(scanner.nextInt());
         scanner.close();
         Therapist therapist = new Therapist();
-        Doctor doctor = therapist.setDoctor(patient);
+        BaseDoctor baseDoctor = therapist.setDoctor(patient);
+        baseDoctor.treat(patient);
         patient.getPatientInfo();
-        doctor.treat(patient);
     }
 
 }

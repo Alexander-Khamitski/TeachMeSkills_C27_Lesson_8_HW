@@ -1,9 +1,9 @@
-package com.teachmeskills.lesson8_hw.doctor.impl;
+package com.teachmeskills.lesson8_hw.task1.doctor.impl;
 
-import com.teachmeskills.lesson8_hw.doctor.Doctor;
-import com.teachmeskills.lesson8_hw.patient.Patient;
+import com.teachmeskills.lesson8_hw.task1.doctor.BaseDoctor;
+import com.teachmeskills.lesson8_hw.task1.patient.Patient;
 
-public class Dentist extends Doctor {
+public class Dentist extends BaseDoctor {
 
     public Dentist() {
         super("Dentist");
